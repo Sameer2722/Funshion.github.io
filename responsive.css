@@ -1,0 +1,444 @@
+@media (max-width: 900px) {
+  nav {
+    width: 100%;
+    padding: 5px 80px;
+  }
+  .home-content {
+    padding: 10px;
+    margin-top: 50vh;
+    margin-left: 53%;
+    height: 30%;
+    width: 40%;
+    text-align: center;
+  }
+  .home-content h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .home-content h3 {
+    margin-bottom: 5px;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .home-content p {
+    line-height: 12px;
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .btn {
+    border: none;
+    font-size: medium;
+    font-weight: 500;
+    height: 35px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .offer-1 h3 {
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .offer1-btn {
+    width: 90px;
+    height: 30px;
+    font-weight: 500;
+  }
+
+  .leftFooter a {
+    font-size: 14px;
+  }
+
+  .midFooter img {
+    margin-top: 1vmax;
+    align-items: center;
+    height: 26px;
+    width: 100px;
+    cursor: pointer;
+  }
+  .midFooter h4 {
+    margin-top: 0.5vmax;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .rightfooter h4 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .rightfooter p {
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  nav {
+    width: 100%;
+    padding: 5px 70px;
+  }
+  .home-content {
+    margin-top: 50vh;
+    margin-left: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 100%;
+    padding: 5px 60px;
+  }
+  .logo img {
+    height: 25px;
+    width: 100px;
+  }
+
+  .mid {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mid a {
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.8s;
+  }
+
+  .home-content {
+    margin-top: 50vh;
+    margin-left: 55%;
+  }
+  .products {
+    padding: 20px 60px;
+  }
+  .deals {
+    padding: 0px 60px;
+  }
+
+  .midFooter h4 {
+    font-size: 10px;
+  }
+  .rightfooter p {
+    font-size: 9px;
+  }
+  .heading {
+    border-bottom: none;
+  }
+  .deals h1 {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .home {
+    position: relative;
+  }
+  nav {
+    padding: 5px 20px;
+  }
+
+  /* ------- Responsive Menu Code Starts -------- */
+
+  .menu-icon .menu{
+    display: block; 
+    cursor: pointer;
+  }
+  .mid {
+    position: absolute;
+    top: 65px;
+    /* left: 0; */
+    right: 0;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    background-color: #fa4908ef;
+
+    /* ----   To Get The Transition  ---- */
+
+    transition: all 0.5s linear;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  /* -------  Add Active Class To Responsiveness  ------ */
+  .active .mid {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .menu-icon .menu {
+    display: none;
+  }
+  .active .menu-icon .close {
+    display: block;
+  }
+
+  .mid a {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .mid a:hover {
+    color: white;
+  }
+
+  /*----------- End Resonsiveness Code  ------------*/
+
+  footer {
+    padding: 15px;
+  }
+  .offer1-btn {
+    width: 70px;
+    height: 22px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    background: linear-gradient(to left, #191818 20%, #ffffff33),
+      url(Images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    width: 100%;
+    border: 0.1px solid black;
+  }
+  .home-content {
+    margin-top: 50vh;
+    margin-left: 40%;
+    width: 60%;
+  }
+
+  .home-content h1 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .home-content h3 {
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .home-content p {
+    line-height: 10px;
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .btn {
+    font-size: 15px;
+    font-weight: 500;
+    height: 32px;
+    width: 90px;
+    padding: 4px;
+  }
+  footer {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .products {
+    padding: 20px 30px;
+  }
+  .deals {
+    padding: 0px 30px;
+  }
+
+  .offer {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+  }
+  .offer-1 {
+    height: 250px;
+    width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .offer-1 img {
+    width: 170px;
+    height: 170px;
+  }
+  .offer-1 h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  footer {
+    padding: 8px;
+  }
+  .leftFooter h4 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .leftFooter a {
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  .midFooter img {
+    height: 23px;
+    width: 90px;
+  }
+  .midFooter h4 {
+    margin-top: 10px;
+    font-size: 8px;
+    line-height: 12px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .midFooter h6 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .rightfooter h4 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .rightfooter p {
+    font-size: 8px;
+  }
+  #right-footer-image {
+    width: 100px;
+  }
+}
+
+@media (max-width: 430px) {
+  .home-content {
+    padding: 5px;
+    margin-top: 50vh;
+    margin-left: 40%;
+    width: 60%;
+  }
+
+  .home-content h1 {
+    font-size: 27px;
+    font-weight: 600;
+  }
+  .home-content h3 {
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .home-content p {
+    line-height: 13px;
+    font-size: 8px;
+    font-weight: 300;
+  }
+
+  .offer {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+  }
+  .offer-1 {
+    height: 250px;
+    width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .offer-1 img {
+    width: 160px;
+    height: 160px;
+  }
+  .offer-1 h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .products {
+    padding: 20px 15px;
+  }
+  .deals {
+    padding: 0px 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  nav {
+    padding: 5px 15px;
+  }
+  .home-content {
+    margin-top: 55vh;
+    margin-left: 35%;
+  }
+  .products {
+    padding: 20px 12px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .leftFooter {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+  }
+  .leftFooter h4 {
+    font-size: 18px;
+  }
+  .leftFooter a {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .midFooter {
+    padding: 10px;
+    border-bottom: 1px solid white;
+  }
+  .rightfooter {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .products {
+    padding: 20px 0px;
+  }
+  .col-1 h4 {
+    font-size: 14px;
+  }
+  .col-1 h6 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 300px){
+  .home-content {
+    margin-top: 60vh;
+    margin-left: 25%;
+    width: 70%;
+  }
+  .home-content h3{
+    font-size: 13px;
+  }
+  .home-content p{
+    font-size: 9px;
+  }
+}

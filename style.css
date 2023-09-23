@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+html,body{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* -------- NAVBAR --------- */
+nav {
+  width: 100%;
+  border: 1px solid white;
+  background-color: black;
+  display: flex;
+  padding: 5px 100px;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid rebeccapurple; */
+}
+.logo img {
+  height: 28px;
+  width: 110px;
+  cursor: pointer;
+}
+
+.mid {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mid a {
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+.mid a:hover {
+  text-decoration: underline;
+  color: rgba(250, 73, 8, 0.936);
+}
+.menu-icon .close{
+  display: none;
+}
+.menu-icon .menu{
+  display: none;
+}
+.menu-icon .menu {
+  padding: 2px;
+  border: 1px solid white;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+.menu-icon .close {
+  padding: 2px;
+  display: none;
+  border: 1px solid white;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  top: 18px;
+  right: 18px;
+}
+
+/* -----------   HOME  --------- */
+
+.home-container {
+  background-image: url(Images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+  width: 100%;
+  border: 0.1px solid black;
+}
+.home-content {
+  padding: 10px;
+  margin-top: 18%;
+  margin-left: 55%;
+  height: 30%;
+  width: 40%;
+  text-align: center;
+}
+.home-content h1 {
+  color: #fcd285;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+.home-content h3 {
+  margin-bottom: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.home-content p {
+  margin-bottom: 14px;
+  color: whitesmoke;
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.btn {
+  border: 1px solid black;
+  background-color: #fcd285;
+  outline: none;
+  color: black;
+  font-size: medium;
+  font-weight: 600;
+  height: 40px;
+  width: 120px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: #fa4908ef;
+  color: black;
+}
+
+/* ------------ PRODUCTS. -------------- */
+
+.heading {
+  text-align: center;
+  text-shadow: 0 5px 5px #fa4908ef;
+  margin-bottom: 2vmax;
+  width: 160px;
+  margin: auto;
+  border-bottom: 4px solid #fa4908ef;
+  padding: 15px;
+}
+.heading h1{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+.products {
+  padding: 20px 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.row {
+  margin: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 2px solid green; */
+}
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 175px;
+  margin: 1vmax;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.col-1 h4 {
+  display: flex;
+  font-size: 15px;
+  align-items: last baseline;
+  justify-content: center;
+  margin-top: 10px;
+}
+.col-1 h6 {
+  margin-top: 10px;
+  display: flex;
+  font-size: 15px;
+  align-items: last baseline;
+  justify-content: center;
+}
+.col-1:hover {
+  transform: translateY(-10px);
+}
+
+/*-------     BLOG   ----------  */
+
+.deals {
+  padding: 0px 100px;
+  width: 100%;
+  height: 100%;
+}
+.offer {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+}
+/* .deals h1 {
+  text-align: center;
+  text-shadow: 0 5px 5px #fa4908ef;
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: 4px solid #fa4908ef;
+  width: 10vmax;
+  margin-bottom: 2vmax;
+  padding: 0.5vmax;
+}  */
+
+.offer-1 {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+.offer-1 img {
+  width: 20vmax;
+  height: 20vmax;
+}
+.offer-1 h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 600;
+}
+.offer1-btn {
+  border: 1px solid black;
+  margin: auto;
+  width: 95px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fcd285;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.offer1-btn:hover {
+  border: 1px solid black;
+  background-color: #fa4908ef;
+  color: white;
+}
+
+/*------- FOOTER  --------  */
+footer {
+  background-color: rgb(46, 41, 41);
+  margin-top: 20px;
+  padding: 1vmax;
+  border-top-right-radius: 1.5vmax;
+  border-top-left-radius: 1.5vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.leftFooter h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 2vmax;
+}
+.leftFooter a {
+  margin-top: 1.5vmax;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 500;
+  cursor: pointer;
+}
+.leftFooter a:hover {
+  color: #fa4908ef;
+}
+
+/* ------------------------ */
+.midFooter {
+  text-align: center;
+  height: 100%;
+  color: white;
+  width: 100%;
+}
+
+.midFooter img {
+  margin-top: 1vmax;
+  align-items: center;
+  height: 28px;
+  width: 105px;
+  cursor: pointer;
+}
+.midFooter h4 {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.midFooter h6 {
+  margin-top: 1.8vmax;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#footer-image {
+  margin-top: 1vmax;
+  align-items: center;
+  height: 7vmax;
+  width: 16vmax;
+  cursor: pointer;
+}
+
+/* ----------------------- */
+
+.rightfooter {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: white;
+  width: 100%;
+}
+.rightfooter h4 {
+  margin-top: 3vmax;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.rightfooter p {
+  margin-top: 1vmax;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+}
+#right-footer-image{
+  width: 120px;
+  margin: auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
